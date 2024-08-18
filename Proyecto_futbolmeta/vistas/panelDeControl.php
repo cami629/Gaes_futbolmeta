@@ -34,6 +34,7 @@ $nombre_usuario = htmlspecialchars($usuario['nom_usuario']);
         .user-info {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             margin-bottom: 20px;
         }
     </style>
@@ -42,8 +43,11 @@ $nombre_usuario = htmlspecialchars($usuario['nom_usuario']);
     <?php include('../includes/header.php'); ?>
     <div class="container mt-5 pt-5">
         <div class="user-info">
-            <i class="fas fa-user user-icon"></i>
-            <span>Hola, <?php echo $nombre_usuario; ?></span>
+            <div>
+                <i class="fas fa-user user-icon"></i>
+                <span>Hola, <?php echo $nombre_usuario; ?></span>
+            </div>
+            <a href="../index.php" class="btn btn-danger">Cerrar Sesión</a>
         </div>
         <h1>Bienvenido al Panel de Control</h1>
         <!-- Aquí va el contenido del panel de control -->
@@ -83,3 +87,5 @@ $nombre_usuario = htmlspecialchars($usuario['nom_usuario']);
     <?php include('../includes/footer.php'); ?>
 </body>
 </html>
+
+ 
