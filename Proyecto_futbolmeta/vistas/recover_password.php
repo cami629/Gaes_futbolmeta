@@ -67,4 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include('../includes/footer.php'); ?>
 </body>
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 23d75136ff9ef42ef72c6d41b20a6bb91f9b1807
